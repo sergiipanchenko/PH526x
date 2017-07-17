@@ -13,3 +13,11 @@ sentence = 'Jim quickly realized that the beautiful gowns are expensive'
 
 count_letters = {}
 #write your code here!
+
+for s in sentence:
+    if s not in count_letters:
+        count_letters[s] = 0
+    count_letters[s] += 1
+count_letters.pop(' ')
+    
+#Exercise Completed 100xp
