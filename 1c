@@ -1,0 +1,29 @@
+
+
+"""
+Rewrite your code from 1b to make a function called counter that takes a string input_string 
+and returns a dictionary of letter counts count_letters. 
+If you were unable to complete 1b, you can use the solution by selecting Show Answer.
+
+Use your function to call counter(sentence).
+"""
+
+sentence = 'Jim quickly realized that the beautiful gowns are expensive'
+
+# Create your function here!
+def counter(input_string):
+
+    count_letters = {}
+    
+    for s in input_string:
+        if s not in count_letters:
+            count_letters[s] = 0
+        count_letters[s] +=1
+        
+    count_letters.pop(' ')
+    
+    return count_letters
+    
+counter(sentence)
+
+#Exercise Completed 100xp
