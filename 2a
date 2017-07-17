@@ -1,0 +1,13 @@
+
+
+"""
+Using the math library, calculate and print the value of pi / 4
+"""
+
+# write your code here!
+
+import math
+
+print(math.pi / 4)
+
+#Exercise Completed 100xp
