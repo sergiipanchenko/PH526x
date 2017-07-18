@@ -1,0 +1,28 @@
+
+
+"""
+distance(x, y) is pre-loaded from part 2c. 
+Write a function in_circle(x, origin) that determines whether 
+a two-dimensional point falls within a unit circle surrounding a given origin. 
+Your function should return a boolean that is True if the 
+distance between x and origin is less than 1, and False otherwise.
+
+Use your function to determine whether the point (1,1) lies within 
+the unit circle centered at (0,0).
+
+Print your answer.
+"""
+import random, math
+
+random.seed(1)
+
+def in_circle(x, origin = [0]*2):
+    # Define your function here!
+    return  distance(x, origin) < 1
+
+point = (1, 1)
+center = (0, 0)
+
+print(in_circle(point, center))
+
+#Exercise Completed 100xp
