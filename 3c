@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+
+# Created on 2017-08-18 23:09
+# @author Sergii Panchenko
+
+# moving_window_average(x, n_neighbors=2) and Y are already loaded into memory. 
+# For each list in Y, calculate and store the range (the maximum minus the minimum) in a new list ranges.
+
+# Print your answer. As the window width increases, does the range of each list increase or decrease? 
+# Why do you think that is?
+
+# write your code here!
+ranges = []
+
+for list in Y:
+    ranges.append(max(list) - min(list))
+    
+print(ranges)
+
+#Exercise Completed 100xp
