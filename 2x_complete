@@ -1,0 +1,29 @@
+# -*- coding: utf-8 -*-
+
+# Created on 2017-08-18 14:17
+# @author Sergii Panchenko
+
+# The ratio of the areas of a circle and the square inscribing it is pi / 4. 
+# In this six-part exercise, we will find a way to approximate this value.
+
+import random, math
+
+def rand():
+   return random.uniform(-1, 1)
+
+def distance(x, y):
+   return math.hypot(x[0] - y[0], x[1] - y[1])
+   
+def in_circle(x, origin = [0]*2):
+    return  distance(x, origin) < 1
+
+R = 100000
+x = []
+inside = []
+
+for i in range(R):
+    point = [rand(), rand()]
+    x.append(point)
+    inside.append(in_circle(point))
+ 
+print(abs(inside.count(True) / R - math.pi / 4))
