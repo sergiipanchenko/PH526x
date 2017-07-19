@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+
+# Created on 2017-08-18 14:23
+# @author Sergii Panchenko
+
+# Write a function moving_window_average(x, n_neighbors) 
+# that takes a list x and the number of neighbors n_neighbors 
+# on either side of a given member of the list to consider.
+
+# For each value in x, moving_window_average(x, n_neighbors) 
+# computes the average of that value's neighbors, 
+# where neighbors includes the value itself.
+
+# moving_window_average should return a list of averaged 
+# values that is the same length as the original list.
+
+# If there are not enough neighbors (for cases near the edge), 
+# substitute the original value as many times as there are 
+# missing neighbors.
+
+# Use your function to find the moving window sum of 
+# x=[0,10,5,3,1,5] and n_neighbors=1.
+
+import random
+
+random.seed(1)
+
+def moving_window_average(x, n_neighbors=1):
+    n = len(x)
+    width = n_neighbors*2 + 1
+    x = [x[0]]*n_neighbors + x + [x[-1]]*n_neighbors
+    # To complete the function, return a list of the mean of values 
+    # from i to i+width for all values i from 0 to n-1.
+    return [sum(x[i : i + width]) / width for i in range(n)]
+
+x=[0,10,5,3,1,5]
+print(moving_window_average(x, 1))
+
+#Exercise Completed 100xp
