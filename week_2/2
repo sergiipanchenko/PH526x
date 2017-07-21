@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+
+# Created on 2017-08-21 19:51
+# @author Sergii Panchenko
+
+# Players 1 and 2 will take turns changing values of this array from a 0 to a 1 or 2, 
+# indicating the number of the player who places there. 
+# Create a function place(board, player, position) with player being the current player 
+# (an integer 1 or 2), and position a tuple of length 2 specifying a desired location 
+# to place their marker. 
+# Only allow the current player to place a piece on the board 
+# (change the board position to their number) if that position is empty (zero).
+
+# Use create_board() to store a board as board, and use place to have 
+# Player 1 place a piece on spot (0, 0).
+
+# write your code here!
+def place(board, player, position):
+    board[position] = player
+
+board = create_board()
+player = 1
+spot = (0, 0)
+
+place(board, player, spot)
+
+#Exercise Completed 100xp
