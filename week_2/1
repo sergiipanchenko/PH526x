@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+
+# Created on 2017-08-18 23:09
+# @author Sergii Panchenko
+
+# For our tic-tac-toe board, we will use a numpy array with dimension 3 by 3. 
+# Make a function create_board() that creates such a board, with values of integers 0.
+
+# Call create_board(), and store this as board.
+
+# write your code here!
+import numpy as np
+
+def create_board():
+    board = np.zeros((3,3), dtype=int)
+    return board
+
+board = create_board()
+
+#Exercise Completed 100xp
