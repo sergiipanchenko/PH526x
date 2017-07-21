@@ -1,4 +1,7 @@
+# -*- coding: utf-8 -*-
 
+# Created on 2017-08-08 23:11
+# @author Sergii Panchenko
 
 """
 Rewrite your code from 1b to make a function called counter that takes a string input_string 
