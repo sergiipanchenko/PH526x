@@ -1,4 +1,7 @@
+# -*- coding: utf-8 -*-
 
+# Created on 2017-08-13 17:09
+# @author Sergii Panchenko
 
 """
 The distance between two points x and y is the square root of the sum 
