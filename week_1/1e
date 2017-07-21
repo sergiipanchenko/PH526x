@@ -1,4 +1,7 @@
+# -*- coding: utf-8 -*-
 
+# Created on 2017-08-18 23:09
+# @author Sergii Panchenko
 
 """
 The frequency of each letter in the Gettysburg Address is already stored as address_count. 
