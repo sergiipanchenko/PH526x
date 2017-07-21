@@ -1,4 +1,7 @@
+# -*- coding: utf-8 -*-
 
+# Created on 2017-08-11 13:22
+# @author Sergii Panchenko
 
 """
 Using random.uniform, create a function rand() 
