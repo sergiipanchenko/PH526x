@@ -16,7 +16,8 @@
 
 # write your code here!
 def place(board, player, position):
-    board[position] = player
+    if board[position] == 0:
+        board[position] = player
 
 board = create_board()
 player = 1
