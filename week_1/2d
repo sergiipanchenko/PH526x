@@ -1,4 +1,7 @@
+# -*- coding: utf-8 -*-
 
+# Created on 2017-08-15 10:19
+# @author Sergii Panchenko
 
 """
 distance(x, y) is pre-loaded from part 2c. 
