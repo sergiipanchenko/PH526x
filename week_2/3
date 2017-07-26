@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+
+# Created on 2017-08-26 12:27
+# @author Sergii Panchenko
+
+# Create a function possibilities(board) that returns a list of all 
+# positions (tuples) on the board that are not occupied (0). 
+# (Hint: numpy.where is a handy function that returns a list of 
+# indexes that meet a condition.)
+
+# board is already defined from previous exercises. 
+# Call possibilities(board) to see what it returns!
+
+# write your code here!
+
+def possibilities(board):
+    return np.where(board == 0)
+
+possibilities(board)
+
+#Exercise Completed 100xp
