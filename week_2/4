@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+
+# Created on 2017-08-26 12:27
+# @author Sergii Panchenko
+
+# Write a function random_place(board, player) that places a marker 
+# or the current player at random among all the available positions 
+# (those currently set to 0).
+
+# Find possible placements with possibilities(board).
+
+# Select one possible placement at random using random.choice(selection).
+
+# board is already defined from previous exercises. 
+# Call random_place(board, player) to place a random marker for Player 2, 
+# and store this as board to update its value.
+
+# write your code here!
+def random_place(board, player):
+    spot = random.choice(possibilities(board))
+    place(board, player, spot)
+
+player = 2
+random_place(board, player)
+
+#Exercise Completed
