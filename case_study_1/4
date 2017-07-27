@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+
+# Created on 2017-08-27 15:03
+# @author Sergii Panchenko
+
+# Note that encoded_message is already loaded from the previous problem. 
+# Use caesar to decode encoded_message using encryption_key = -3.
+
+# Store your decoded message as decoded_message.
+
+# Print decoded_message. Does this recover your original message?
+
+decoded_message = caesar(encoded_message, -3)
+print(decoded_message)
+
+#Exercise Completed 100xp
