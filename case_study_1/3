@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+
+# Created on 2017-08-27 15:03
+# @author Sergii Panchenko
+
+# alphabet and letters are preloaded from the previous exercise. 
+# Write a function caesar(message, encryption_key) to encode a message with the Caesar cipher.
+# Use your code from Exercise 2 to find the value of encoding for each letter in message.
+# Use these values as keys in the dictionary letters to determine the encoded letter for each letter in message.
+# Your function should return a string consisting of these encoded letters.
+# Use caesar to encode message using encryption_key = 3, and save the result as encoded_message.
+# Print encoded_message.
+
+import string
+
+alphabet = string.ascii_lowercase + " "
+letters = dict(enumerate(alphabet))
+
+encryption_key = 3
+
+message = "hi my name is caesar"
+
+def caesar(message, encryption_key):
+    # return the encoded message as a single string!
+    encoding = {letter: (place + encryption_key) % 27 for (place, letter) in enumerate(alphabet)}
+    encoded_message = "".join([letters[encoding[letter]] for letter in message])
+    return encoded_message
+    
+encoded_message = caesar(message, encryption_key)
+print(encoded_message)
+
+#Exercise Completed 100xp
