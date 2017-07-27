@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+
+# Created on 2017-08-26 23:39
+# @author Sergii Panchenko
+
+# alphabet and letters are already defined. 
+# Create a dictionary encoding with keys being the characters in alphabet and 
+# values being numbers from 0-26, shifted by an integer encryption_key=3. 
+# For example, the key a should have value encryption_key, key b should have 
+# value encryption_key + 1, and so on. If any result of this addition is less 
+# than 0 or greater than 26, you can ensure the result remains within 0-26 
+# using result % 27
+import string
+
+alphabet = string.ascii_lowercase + " "
+letters = dict(enumerate(alphabet))
+encryption_key = 3
+
+# define `encoding` here!
+encoding = {letter: (place + encryption_key) % 27 for (place, letter) in enumerate(alphabet)}
+
+#Exercise Completed: Take Hint (-30xp) + Show answer(-70xp) = 0/100xp        _oO_
