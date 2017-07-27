@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+
+# Created on 2017-08-26 23:39
+# @author Sergii Panchenko
+
+# Create a dictionary letters with keys consisting of the numbers 
+# from 0 to 26, and values consisting of the lowercase letters 
+# of the English alphabet, including the space ' ' at the end.
+
+# Let's look at the lowercase letters.
+import string
+#string.ascii_lowercase
+
+# We will consider the alphabet to be these letters, along with a space.
+alphabet = string.ascii_lowercase + " "
+
+# create `letters` here!
+letters = dict(enumerate(alphabet))
+
+#Exercise Completed
